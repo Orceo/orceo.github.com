@@ -1,0 +1,196 @@
+/* Mixins.scss
+ * Snippets of reusable CSS to develop faster and keep code readable
+ * ----------------------------------------------------------------- */
+.clearfix {
+  zoom: 1; }
+  .clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    *display: inline; }
+  .clearfix:after {
+    clear: both; }
+
+.fixed-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  zoom: 1; }
+  .fixed-container:before, .fixed-container:after {
+    display: table;
+    content: "";
+    zoom: 1;
+    *display: inline; }
+  .fixed-container:after {
+    clear: both; }
+
+article pre {
+  font-size: 13px !important; }
+
+.toc {
+  background: white;
+  margin-left: 20px;
+  max-width: 500px;
+  padding: 20px;
+  padding-right: 30px;
+  padding: 2em;
+  border: 1px solid #dddddd;
+  float: right;
+  -webkit-box-shadow: -2px 2px 6px #bbbbbb;
+  -moz-box-shadow: -2px 2px 6px #bbbbbb;
+  box-shadow: -2px 2px 6px #bbbbbb; }
+
+.container > section {
+  margin-top: 60px; }
+
+body {
+  background: url("/assets/images/bg.jpg") !important;
+  background-size: cover; }
+
+body {
+  background: rgba(253, 246, 227, 0.6); }
+
+strong {
+  color: #cb4b16; }
+
+code {
+  white-space: pre;
+  display: block;
+  padding: 10px;
+  color: gray; }
+
+.highlight {
+  line-height: 25px;
+  padding: 3px 4px;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8; }
+
+.jumbotron {
+  position: relative; }
+
+.jumbotron h1 {
+  margin-bottom: 9px;
+  font-size: 81px;
+  letter-spacing: -1px;
+  line-height: 1; }
+
+.masthead {
+  padding-top: 36px;
+  margin-bottom: 72px; }
+  .masthead h1, .masthead p {
+    text-align: center; }
+  .masthead h1 {
+    margin-bottom: 18px; }
+  .masthead p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 30px;
+    line-height: 36px; }
+
+.marketing h2 {
+  margin: 36px 0 27px;
+  text-align: center; }
+
+hr {
+  border: 0px;
+  border-bottom: 5px solid #34669a; }
+
+.whitened {
+  background: white;
+  border-top: 5px solid #34669a; }
+
+.wrapper {
+  padding: 10px; }
+
+h1, h2, h3, h4, h5 {
+  color: #34669a; }
+
+.dark {
+  color: white;
+  background: rgba(0, 0, 0, 0.6); }
+
+.span12.promo {
+  background: url("/assets/images/main_promo.jpg");
+  height: 312px; }
+  .span12.promo ul {
+    padding-top: 10px; }
+    .span12.promo ul li {
+      margin: 30px 0 0 580px;
+      list-style: none; }
+      .span12.promo ul li a {
+        font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        text-shadow: 0px 0px 4px #34669a;
+        letter-spacing: 1px;
+        color: transparent;
+        font-size: 2em;
+        line-height: 0.7em;
+        text-decoration: none; }
+        .span12.promo ul li a:hover {
+          color: #34669a;
+          text-shadow: 0px 0px 2px white;
+          padding-left: 10px;
+          cursor: pointer; }
+
+footer {
+  border-top: 5px solid #34669a; }
+  footer ul.nav {
+    float: right; }
+    footer ul.nav li {
+      display: inline; }
+      footer ul.nav li:after {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        content: "|"; }
+      footer ul.nav li:last-child:after {
+        content: ""; }
+
+.row {
+  margin-bottom: 1em; }
+
+header {
+  height: 120px; }
+  header .logo {
+    padding-top: 1em;
+    height: 140px;
+    background: #7895a9 url("/assets/images/logo_main.png") 38px 20px no-repeat; }
+  header .newsblock {
+    padding: 5px;
+    background: #f2f2f2;
+    width: 250px;
+    float: right; }
+    header .newsblock p {
+      font-size: 0.9em;
+      margin: 0; }
+  header ul.uberhead {
+    margin-top: 1em;
+    float: right;
+    color: white;
+    position: right;
+    list-style: none; }
+    header ul.uberhead li {
+      line-height: 27px;
+      margin-left: 1em;
+      margin-right: 1em;
+      float: left; }
+  header ul.nav {
+    float: left; }
+    header ul.nav li {
+      margin-left: 1em;
+      padding-top: 20px;
+      float: left;
+      width: 155px;
+      border-bottom: 1px dotted #cccccc; }
+
+.clear {
+  clear: both; }
+
+form.form-search {
+  margin-bottom: 0; }
+
+article .span3 {
+  width: 175px; }

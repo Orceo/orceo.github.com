@@ -1,0 +1,179 @@
+@import mixins
+
+$grid-background-baseline-height: 1.375em
+
+article
+  pre
+    font-size: 13px !important
+
+.toc
+  background: #fff
+  :margin-left 20px
+  :max-width 500px
+  :padding 20px
+  :padding-right 30px
+  :padding 2em
+  :border 1px solid #DDD
+  :float right
+  +box-shadow(-2px 2px 6px #bbb)
+
+.container > section
+  :margin-top 60px
+
+body
+  background: url('/assets/images/bg.jpg') !important
+  background-size: cover
+
+body
+  background: rgba(253, 246, 227, .6)
+
+strong
+  color: #cb4b16
+
+code
+  white-space: pre
+  display: block
+  padding: 10px
+  color: gray
+
+.highlight
+  line-height: 25px
+  padding: 3px 4px
+  background-color: #f7f7f9
+  border: 1px solid #e1e1e8
+
+
+
+.jumbotron
+  position: relative
+
+.jumbotron h1
+  margin-bottom: 9px
+  font-size: 81px
+  letter-spacing: -1px
+  line-height: 1
+
+.masthead
+  padding-top: 36px
+  margin-bottom: 72px
+
+  h1, p
+    text-align: center
+
+  h1
+    margin-bottom: 18px
+
+  p
+    margin-left: 5%
+    margin-right: 5%
+    font-size: 30px
+    line-height: 36px
+
+.marketing
+  h2
+    margin: 36px 0 27px
+    text-align: center
+
+hr
+  border: 0px
+  border-bottom: 5px solid #34669A
+
+.whitened
+  background: #fff
+  border-top: 5px solid #34669A
+
+.wrapper
+  padding: 10px
+
+h1, h2, h3, h4, h5
+  color: #34669A
+
+
+.dark
+  color: #fff
+  background: rgba(0,0,0,0.6)
+
+.span12.promo
+  background: url('/assets/images/main_promo.jpg')
+  height: 312px
+  ul
+    padding-top: 10px
+    li
+      margin: 30px 0 0 580px
+      list-style: none
+      a
+        font: 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif
+        +transition(all 0.3s ease-in-out)
+        text-shadow: 0px 0px 4px #34669A
+        letter-spacing: 1px
+        color: transparent
+        font-size: 2em
+        line-height: 0.7em
+        text-decoration: none
+        &:hover
+          color: #34669A
+          text-shadow: 0px 0px 2px white
+          padding-left: 10px
+          cursor: pointer
+footer
+  border-top: 5px solid #34669A
+  ul.nav
+    float: right
+    li
+      display: inline
+      &:after
+        padding-left: .5em
+        padding-right: .5em
+        content: "|"
+      &:last-child:after
+        content: ""
+
+
+.row
+  margin-bottom: 1em
+
+header
+  height: 120px
+  .logo
+    padding-top: 1em
+    height: 140px
+    background: #7895A9 url("/assets/images/logo_main.png") 38px 20px no-repeat
+  .newsblock
+    padding: 5px
+    background: #F2F2F2
+    width: 250px
+    float: right
+    p
+      font-size: 0.9em
+      margin: 0
+
+  ul.uberhead
+    margin-top: 1em
+    float: right
+    color: #fff
+    position: right
+    list-style: none
+    li
+      line-height: 27px
+      margin-left: 1em
+      margin-right: 1em
+      float: left
+  ul.nav
+    float: left
+    li
+      margin-left: 1em
+      padding-top: 20px
+      float: left
+      width: 155px
+      border-bottom: 1px dotted #ccc
+
+.clear
+  clear: both
+
+form.form-search
+  margin-bottom: 0
+
+
+article
+  .span3
+    width: 175px

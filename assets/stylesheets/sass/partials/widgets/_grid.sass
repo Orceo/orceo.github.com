@@ -1,0 +1,19 @@
+// The base font size
+$base-font-size: 16px !default
+
+// Apply leading whitespace
+@mixin leader($lines: 1, $font-size: $base-font-size, $property: margin)
+  $leader: rhythm($lines, $font-size)
+  @if unit($leader) == px
+    $leader: floor($leader)
+  #{$property}-top: $leader
+
+// Apply leading whitespace as padding
+@mixin padding-leader($lines: 1, $font-size: $base-font-size)
+  @include leader($lines, $font-size, padding)
+
+
+section.content
+  margin: 0 auto
+  max-width: 1250px
+  padding-top: 10px
